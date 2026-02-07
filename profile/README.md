@@ -113,5 +113,3 @@ We leverage what works: Terraform Registry modules, open source observability (P
 ---
 
 **Ship Fast. Ship Safe. Ship Often.**
-
-[Explore Our Repos](https://github.com/4KMetrics)
