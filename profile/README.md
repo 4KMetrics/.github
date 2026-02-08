@@ -1,4 +1,4 @@
-# 4KMetrics
+# 4KM
 
 ## Accelerated, Data-Driven Software Delivery at Scale
 
@@ -99,7 +99,53 @@ flowchart TB
 
 ---
 
-## Why 4KMetrics
+## Software Delivery Lifecycle
+
+Developers should focus on building features. We handle everything else.
+
+```mermaid
+flowchart LR
+    subgraph DEV["Developers Own"]
+        A[Code] --> B[Build] --> C[Test]
+    end
+
+    subgraph 4KM["4KM Handles"]
+        D[Security Scan] --> E[Package]
+        E --> F[Deploy Dev]
+        F --> G[Validate]
+        G --> H[Promote Staging]
+        H --> I[Perf Test]
+        I --> J[Security Test]
+        J --> K[Deploy Prod]
+        K --> L[Observe]
+        L --> M[Respond]
+    end
+
+    C --> D
+
+    style DEV fill:#e1f5fe
+    style 4KM fill:#fff3e0
+```
+
+| Phase | What Happens | What 4KM Provides |
+|-------|--------------|-------------------|
+| **Code** | Write code, GenAI-assisted | PR workflows, branch policies, review automation |
+| **Build** | Compile, bundle, artifacts | CI pipelines, dependency caching, build optimization |
+| **Test** | Unit, integration, E2E | Test automation, parallel runners, test environments |
+| **Security Scan** | SAST, SCA, secret detection | Security gates, vulnerability policies, compliance |
+| **Package** | Container images, artifacts | Container registries, image signing, versioning |
+| **Deploy Dev** | Push to dev environment | Terraform, Kubernetes, Helm, ArgoCD |
+| **Validate** | Smoke tests, integration checks | Automated validation gates, synthetic monitoring |
+| **Promote Staging** | Environment promotion | Promotion pipelines, config management |
+| **Perf Test** | Load and stress testing | Performance gates, baseline comparisons |
+| **Security Test** | DAST, runtime scanning | Penetration automation, compliance checks |
+| **Deploy Prod** | Production release | Blue/green, canary, rollback strategies |
+| **Observe** | Monitoring, logging, tracing | Prometheus, Grafana, OpenTelemetry, alerting |
+| **Respond** | Incidents, scaling | Runbooks, auto-scaling, self-healing |
+
+---
+
+## Why 4KM
 
 | What You Get | How We Deliver |
 |--------------|----------------|
