@@ -2,7 +2,7 @@
 
 ## Fix how you ship!
 
-DevOps expertise + AI-powered insights to measure, diagnose, and fix your software delivery pipeline.
+AI-powered insights to measure, diagnose, and fix your software delivery pipeline.
 
 ---
 
@@ -67,7 +67,7 @@ Your engineers focus on code, architecture, and the problems only humans can sol
 | **Kubernetes** | Production-grade clusters, RBAC, autoscaling, security |
 | **Observability** | Prometheus, Grafana, OpenTelemetry — see everything |
 | **Security** | SAST, DAST, dependency scanning baked into the pipeline |
-| **ML Pipelines** | Data ingestion to model serving, production-ready |
+| **ML Deployment** | SageMaker endpoints, inference pipelines |
 
 ---
 
@@ -87,20 +87,6 @@ flowchart TB
         GUARD[Guardrails & Gates]
     end
 
-    subgraph MLOPS["MLOps"]
-        DATA[Data Pipelines]
-        TRAIN[Model Training]
-        REGISTRY[Model Registry]
-        SERVE[Model Serving]
-    end
-
-    subgraph AIOPS["AIOps"]
-        MONITOR[Intelligent Monitoring]
-        DETECT[Anomaly Detection]
-        PREDICT[Predictive Scaling]
-        HEAL[Self-Healing]
-    end
-
     subgraph PROD["Production"]
         DEPLOY[Deployment]
         OBS[Observability]
@@ -109,17 +95,10 @@ flowchart TB
 
     CODE --> PR --> REVIEW --> CI
     CI --> GUARD --> CD --> IaC --> DEPLOY
-
-    DATA --> TRAIN --> REGISTRY --> SERVE --> DEPLOY
-
-    DEPLOY --> OBS --> MONITOR
-    MONITOR --> DETECT --> PREDICT --> HEAL
-    HEAL --> FEEDBACK --> CODE
+    DEPLOY --> OBS --> FEEDBACK --> CODE
 
     style DEV fill:#e1f5fe
     style DEVOPS fill:#fff3e0
-    style MLOPS fill:#f3e5f5
-    style AIOPS fill:#e8f5e9
     style PROD fill:#fce4ec
 ```
 
