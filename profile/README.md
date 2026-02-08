@@ -2,7 +2,7 @@
 
 ## Accelerated, Data-Driven Software Delivery at Scale
 
-Years of DevOps expertise meets modern GenAI tooling. We partner with your developers and leadership to transform how you ship software.
+Years of DevOps expertise meets modern GenAI tooling. We partner with AI-augmented engineering teams to transform how you ship software—so your developers solve problems only humans can solve.
 
 ---
 
@@ -16,6 +16,17 @@ We don't just hand you tools—we work alongside your team to understand your co
 2. **Align** — Collaborate with developers and org leaders to understand goals and constraints
 3. **Architect** — Design a tailored plan using industry-proven patterns and existing tools
 4. **Accelerate** — Implement changes that drive data-driven deployment velocity improvements
+
+---
+
+## Why Now
+
+AI is automating the repetitive. The teams that win are the ones who redirect their engineers toward work that requires judgment, context, and relationships—things no model can replicate.
+
+- **Your developers + AI** → Architecture decisions, edge cases, customer context, novel problems
+- **4KM** → Pipelines, security gates, infrastructure, observability, incident response
+
+We don't build models. We implement them into reliable workflows your business can depend on.
 
 ---
 
@@ -101,7 +112,7 @@ flowchart TB
 
 ## Software Delivery Lifecycle
 
-Developers should focus on building features. We handle everything else.
+Your engineers + AI should own what requires judgment. We automate what doesn't.
 
 ```mermaid
 flowchart LR
@@ -149,12 +160,13 @@ flowchart LR
 
 | What You Get | How We Deliver |
 |--------------|----------------|
-| **Experience** | Years of hands-on DevOps across startups and enterprises |
-| **Intelligence** | GenAI tools to analyze code and identify bottlenecks |
-| **Pragmatism** | We use proven, community-maintained tools—not custom bloat |
-| **Partnership** | We work *with* your team, not around them |
+| **Domain Depth** | Years of hands-on DevOps—not generic playbooks from a textbook |
+| **Partnership** | We embed *with* your team, building trust and context over time |
+| **Durability** | Battle-tested patterns that survive platform shifts and hype cycles |
+| **Speed** | 2-week delivery cycles—we ship, learn, and iterate |
+| **Pragmatism** | Proven, community-maintained tools—not custom bloat |
 
-We leverage what works: Terraform Registry modules, open source observability (Prometheus, Grafana, OpenTelemetry), and battle-tested CI/CD patterns. Why build from scratch when you can build on giants?
+We leverage what works: Terraform Registry modules, open source observability (Prometheus, Grafana, OpenTelemetry), and patterns that have survived production. Why build from scratch when you can build on giants?
 
 ---
 
